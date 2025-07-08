@@ -190,7 +190,7 @@ Submit a Pull Request: If you've implemented a solution or a new feature, we'd l
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+# Acknowledgments
 The creators and maintainers of FastAPI, Apache Kafka, Zookeeper, and Docker for providing such powerful open-source tools.
 
 
