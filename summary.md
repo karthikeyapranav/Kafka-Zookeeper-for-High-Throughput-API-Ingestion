@@ -1,12 +1,12 @@
-# 📊 Project Summary: Kafka-Based API Ingestion with FastAPI
+#  Project Summary: Kafka-Based API Ingestion with FastAPI
 
-## 🎯 Objective
+##  Objective
 
 This project demonstrates how to build a scalable, event-driven system using **FastAPI**, **Kafka**, and **Zookeeper**. The goal is to simulate high-throughput traffic (10,000 requests) and process events asynchronously using Kafka consumer workers.
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - **FastAPI**: Handles incoming HTTP POST requests (event ingestion).
 - **Apache Kafka**: Asynchronous message queue for decoupling producer/consumer.
@@ -18,7 +18,7 @@ This project demonstrates how to build a scalable, event-driven system using **F
 
 ---
 
-## 🔄 Data Flow
+##  Data Flow
 
 1. `simulate_traffic.py` sends 10,000 POST requests to FastAPI (`/register_event`).
 2. FastAPI validates and sends each request to a Kafka topic named `events`.
@@ -28,16 +28,16 @@ This project demonstrates how to build a scalable, event-driven system using **F
 
 ---
 
-## 📈 Use Case Demonstration
+##  Use Case Demonstration
 
-✅ Handles thousands of API requests efficiently  
-✅ Demonstrates event decoupling using Kafka  
-✅ Real-time log generation for each processed event  
-✅ Works as a blueprint for IoT data pipelines, logs, telemetry, etc.
+ Handles thousands of API requests efficiently  
+ Demonstrates event decoupling using Kafka  
+ Real-time log generation for each processed event  
+ Works as a blueprint for IoT data pipelines, logs, telemetry, etc.
 
 ---
 
-## 🧪 Features Simulated
+##  Features Simulated
 
 - High-volume traffic generation (10,000 events)
 - Message validation and queuing
@@ -46,7 +46,7 @@ This project demonstrates how to build a scalable, event-driven system using **F
 
 ---
 
-## 📁 Folder Overview
+##  Folder Overview
 
 | Path                     | Description                            |
 |--------------------------|----------------------------------------|
@@ -58,7 +58,7 @@ This project demonstrates how to build a scalable, event-driven system using **F
 
 ---
 
-## 📌 Outcome
+##  Outcome
 
 - Kafka successfully buffers traffic from FastAPI.
 - Consumer logs show correct message processing.
@@ -67,7 +67,7 @@ This project demonstrates how to build a scalable, event-driven system using **F
 
 ---
 
-## 🔧 Next Steps
+##  Next Steps
 
 - Integrate message persistence (e.g., MongoDB/PostgreSQL).
 - Add retry logic in case of Kafka downtime.
