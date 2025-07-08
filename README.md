@@ -1,4 +1,4 @@
-# ⚡ Kafka + FastAPI High-Throughput Event Ingestion System
+#  Kafka + FastAPI High-Throughput Event Ingestion System
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![FastAPI Version](https://img.shields.io/badge/FastAPI-0.111.0%2B-009688.svg)](https://fastapi.tiangolo.com/)
@@ -12,7 +12,7 @@ It's a practical demonstration of how to build a system that can gracefully hand
 
 ---
 
-## 🧩 Architecture Overview
+##  Architecture Overview
 
 The system is designed with a clear separation of concerns, enabling scalability and resilience:
 
@@ -37,14 +37,14 @@ This asynchronous architecture ensures that the API remains highly responsive, e
 
 ---
 
-## 📦 Project Structure
+##  Project Structure
 You're asking for the same excellent and detailed Markdown file I provided previously, which is already designed to be beautiful, clear, and easy to understand, all in a single file.
 
 Here it is again for your convenience:
 
 Markdown
 
-# ⚡ Kafka + FastAPI High-Throughput Event Ingestion System
+#  Kafka + FastAPI High-Throughput Event Ingestion System
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![FastAPI Version](https://img.shields.io/badge/FastAPI-0.111.0%2B-009688.svg)](https://fastapi.tiangolo.com/)
@@ -58,7 +58,7 @@ It's a practical demonstration of how to build a system that can gracefully hand
 
 ---
 
-## 🧩 Architecture Overview
+##  Architecture Overview
 
 The system is designed with a clear separation of concerns, enabling scalability and resilience:
 
@@ -84,7 +84,7 @@ This asynchronous architecture ensures that the API remains highly responsive, e
 
 ---
 
-## 📦 Project Structure
+##  Project Structure
 
 kafka-api-ingestion/
 ├── app/                        # FastAPI application (Producer)
@@ -106,7 +106,7 @@ kafka-api-ingestion/
 
 ---
 
-## 🚀 How to Run the System
+##  How to Run the System
 
 Follow these steps to set up and run the entire high-throughput ingestion pipeline on your local machine.
 
@@ -186,7 +186,7 @@ Before you start, ensure you have the following installed:
 
 ---
 
-## 🔁 API Endpoints
+##  API Endpoints
 
 The FastAPI application exposes the following endpoints:
 
@@ -196,7 +196,7 @@ Accepts a JSON event payload and asynchronously pushes it to the `events` Kafka 
 
 **Request Body Example:**
 
-📈 What This Project Demonstrates
+# What This Project Demonstrates
 This project provides a hands-on understanding of several critical concepts in modern data architecture:
 
 Handling High-Throughput Requests: Shows how a FastAPI application can efficiently receive and queue thousands of requests per second by offloading processing.
@@ -213,7 +213,7 @@ Logging and Observability Practices: The consumer's logging mechanism demonstrat
 
 Dockerized Microservices Setup: All core components are containerized, ensuring consistent environments and simplifying deployment across different machines.
 
-🧠 Learning Goals
+# Learning Goals
 By exploring and running this project, you will gain valuable insights into:
 
 Scalable API Ingestion: Understanding how to design APIs that can handle a massive influx of data without becoming a bottleneck.
@@ -226,14 +226,14 @@ Distributed System Concepts: Experiencing how different services (FastAPI, Kafka
 
 Observability in Action: Observing how logs can provide insight into the flow and processing of data within the pipeline.
 
-🤝 Contributing
+# Contributing
 Contributions, issues, and feature requests are welcome! If you have ideas for improvements or encounter any problems, please feel free to:
 
 Open an issue: Describe the bug or feature request in detail.
 
 Submit a Pull Request: If you've implemented a solution or a new feature, we'd love to see it!
 
-📄 License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 🙏 Acknowledgments
