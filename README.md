@@ -29,52 +29,6 @@ The system is designed with a clear separation of concerns, enabling scalability
 |
 +-----------------------------> Logs / Further Processing
 
-1.  **FastAPI Producer (`app/main.py`):** Acts as the ingestion endpoint. It receives incoming events via HTTP POST requests and immediately publishes them to a Kafka topic. This allows the API to respond quickly without waiting for the actual event processing to complete, handling high concurrency.
-2.  **Apache Kafka + Zookeeper (Docker):** Forms the backbone of the event bus. Kafka acts as a distributed streaming platform, capable of handling vast amounts of data. Zookeeper manages Kafka brokers. Events are reliably stored in the `events` topic.
-3.  **Kafka Consumer (`consumer/consumer.py`):** Runs as a separate process, continuously listening for new messages on the `events` Kafka topic. When an event is consumed, it simulates processing by logging the event details, demonstrating how decoupled background tasks would handle the data.
-
-This asynchronous architecture ensures that the API remains highly responsive, even under immense load, as the heavy lifting of event processing is offloaded to the Kafka consumer.
-
----
-
-##  Project Structure
-You're asking for the same excellent and detailed Markdown file I provided previously, which is already designed to be beautiful, clear, and easy to understand, all in a single file.
-
-Here it is again for your convenience:
-
-Markdown
-
-#  Kafka + FastAPI High-Throughput Event Ingestion System
-
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![FastAPI Version](https://img.shields.io/badge/FastAPI-0.111.0%2B-009688.svg)](https://fastapi.tiangolo.com/)
-[![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-2.x%2B-blueviolet.svg)](https://kafka.apache.org/)
-[![Docker Compose](https://img.shields.io/badge/Docker%20Compose-Up-blue.svg)](https://docs.docker.com/compose/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-This project showcases a robust and scalable **event ingestion pipeline** designed for high-throughput data streams. It leverages the power of **FastAPI** for efficient API request handling, **Apache Kafka** for asynchronous event processing and decoupling, and **Docker** for simplified deployment and environment consistency.
-
-It's a practical demonstration of how to build a system that can gracefully handle a large volume of incoming data, process it reliably, and maintain responsiveness, making it ideal for analytics, logging, or real-time data processing applications.
-
----
-
-##  Architecture Overview
-
-The system is designed with a clear separation of concerns, enabling scalability and resilience:
-
-+-------------------+      +-----------------+      +-----------------+
-| FastAPI Producer  |----->| Kafka Topic:    |----->| Kafka Consumer  |
-| (HTTP/REST API)   |      |   'events'      |      | (Background Job)|
-+-------------------+      +-----------------+      +-----------------+
-▲                            ▲
-|                            |
-|      +---------------------+
-|      | Zookeeper + Kafka   |
-|      | (Dockerized Cluster)|
-|      +---------------------+
-|
-+-----------------------------> Logs / Further Processing
-
 
 1.  **FastAPI Producer (`app/main.py`):** Acts as the ingestion endpoint. It receives incoming events via HTTP POST requests and immediately publishes them to a Kafka topic. This allows the API to respond quickly without waiting for the actual event processing to complete, handling high concurrency.
 2.  **Apache Kafka + Zookeeper (Docker):** Forms the backbone of the event bus. Kafka acts as a distributed streaming platform, capable of handling vast amounts of data. Zookeeper manages Kafka brokers. Events are reliably stored in the `events` topic.
